@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora de Gorjetas</title>
+</head>
+<body>
+    <div class="container">
+    <div>
+        <h1 class="title">Calculadora de Gorjetas</h1>
+    </div>
+    <div>
+        <form class="formulario" id="formulario">
+            <label for="bill">
+                <p>Quanto Ficou a conta?</p>
+            </label>
+            <p>
+               R$ <input type="number" placeholder="100" name="bill" id="bill" class="formInput">
+            </p>
+            <label for="servicoQual">
+                <p> Como foi seu serviço?</p>
+            </label>
+                <p>
+                    <select name="servicoQual" id="servicoQual" class="formSelect">
+                        <option disabled selected value="0.0">-- Escolha uma opção</option>
+                        <option value="0.3">30% - Incrivel</option>
+                        <option value="0.2">20% - Bom</option>
+                        <option value="0.10">10% - Razoavel</option>
+                        <option value="0.5">0.5% - Ruim</option>
+                    </select>
+                </p>
+            <label for="pessoas">
+                <p>
+                    Quantas pessoas vão dividir a conta?
+                </p>
+            </label>
+                <p>
+                    <input type="number" placeholder="1" id="pessoas" name="pessoas" class="formInput"> Pessoa(s)
+                </p>       
+            <button type="submit" id="submit" class="formSubmit">Calcular!</button>
+
+        </form>
+        <div id="totalGorjeta" class="totalGorjeta">
+            Gorjeta Total:
+            R$<span id="gorjeta">0.00</span>
+            <p id="cada">Cada</p>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
